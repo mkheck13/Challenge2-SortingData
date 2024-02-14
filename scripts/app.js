@@ -27,15 +27,13 @@ const PopulateTable = (data) => {
 PopulateTable(data);
 
 results.addEventListener('change', function () {
-    console.log(results.value);
     let pages = DisplayResults(results.value, data.People);
     injectRows.innerHTML = '';
-    pages[0].map(person => MakeRow(person.Id, person.FirstName, person.LastName, person.Email, person.Height, person.Age, injectRows));
+    pages[0].map(person => MakeRow(person.Id, person.FirstName, person.LastName, person.Height, person.Age, injectRows));
 
 });
 
 nextBtn.addEventListener('click', function () {
-    console.log(results.value);
     let pages = DisplayResults(results.value, data.People);
     switch (parseInt(results.value)) {
         case 10:
