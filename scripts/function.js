@@ -7,8 +7,6 @@ const personData = async () => {
     return data;
 }
 
-
-
 const MakeRow = (id, firstName, lastName, height, age, inject) => {
     let thRow = document.createElement('th');
     thRow.scope = 'row';
@@ -27,7 +25,6 @@ const MakeRow = (id, firstName, lastName, height, age, inject) => {
     inject.append(tr);
 }
 
-
 const DisplayResults = (resultValue, array) => {
     let parseValue = parseInt(resultValue);
     let numberOfPages = Math.ceil(array.length / parseValue);
@@ -45,7 +42,6 @@ const DisplayResults = (resultValue, array) => {
     }
     return pages;
 }
-
 
 const PopulateOnClick = (array) => {
     array.map(person => MakeRow(person.Id, person.FirstName, person.LastName, person.Height, person.Age, injectRows));

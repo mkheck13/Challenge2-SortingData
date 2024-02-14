@@ -6,8 +6,6 @@ let sortFirstNameAsc, sortFirstNameDesc, sortLastNameAsc, sortLastNameDesc;
 let sortId, sortAge, sortHeight, sortFirstName, sortLastName;
 let index = 1;
 let limit = 0;
-// console.log(data);
-// console.log(data.People[0].FirstName);
 
 let injectRows = document.querySelector('#injectRows');
 let sortByID = document.querySelector('#sortByID');
